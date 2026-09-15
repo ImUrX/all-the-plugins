@@ -1,6 +1,6 @@
 #include "../uart_terminal_app_i.h"
 
-#define MAX_OPTIONS 25
+#define MAX_OPTIONS 26
 
 typedef struct {
     const char* item_string;
@@ -11,10 +11,10 @@ typedef struct {
 // SETUP_MENU_ITEMS defined in uart_terminal_app_i.h - if you add an entry here, increment it!
 static const UART_Terminal_Setup_Item items[SETUP_MENU_ITEMS] = {
     {"UART Pins", 2, {"13,14", "15,16"}},
-    {"Baudrate", 25, {"75",     "110",    "150",    "300",   "600",    "1200",   "1800",
+    {"Baudrate", 26, {"75",     "110",    "150",    "300",   "600",    "1200",   "1800",
                       "2400",   "4800",   "7200",   "9600",  "14400",  "19200",  "31250",
                       "38400",  "56000",  "57600",  "76800", "115200", "128000", "230400",
-                      "250000", "256000", "460800", "921600"}},
+                      "250000", "256000", "460800", "576000", "921600"}},
     {"HEX mode", 2, {"OFF", "ON"}},
     {"CR mode", 2, {"Newline", "CR+LF"}},
 };
